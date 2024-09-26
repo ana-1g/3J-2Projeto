@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&display=swap');
 
 :root{
-    --cor-de-fundo:#343131;
-    --cor-primaria:#A04747;
-    --cor-secundaria:#D8A25E;
+    --cor-de-fundo:#3AA6B9;
+    --cor-primaria:#FFD0D0;
+    --cor-secundaria:#F9F9E0;
     --fonte: "Mukta", sans-serif;
 }
 *{
@@ -13,5 +13,32 @@
 body{
     background-color: var(--cor-de-fundo);
     color: var(--cor-primaria);
-    font-family: var(--cor-secundaria);
+    font-family: var(--fonte);
+    height: 100vh;
+    margin: 0;
+}
+header{
+    background-color: var(--cor-primaria);
+    text-align: center;
+}
+h1{
+    font-size: 2rem;
+    color: var(--cor-de-fundo);
+    font-weight: 700;
+}
+nav{
+    display: flex;
+    justify-content: center;
+    font-weight: 400;
+}
+nav a{
+    text-decoration: none;
+    color: var(--cor-de-fundo);
+    margin: 0 2rem 1rem 0;
+    font-size: 1.2rem;
+}
+nav a:hover{
+    text-decoration: underline;
+    transform: scale(0.9);
+    transition: transform 1s;
 }
