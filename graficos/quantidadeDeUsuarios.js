@@ -22,13 +22,31 @@ const layout = {
     plot_bgcolor: getCSS('--cor-de-fundo'),
     paper_bgcolor: getCSS('--cor-de-fundo'),
     title: {
-        Text: 'Redes sociais com mais usuario no mundo',
+        text: 'Redes sociais com mais usuarios no mundo',
         x: 0,
-        font: {
+        font:{
             color: getCSS('--cor-primaria'),
-            family: getCSS('--font'),
+            family: getCSS('--fonte'),
             size: 30
          }
+    },
+    xaxis:{
+        tickfont: tickfont,
+        title:{
+            text: 'Nome das edes sociais',
+            font:{
+                color: getCSS('--cor-secundaria')
+            }
+        }
+    },
+    yaxis:{
+        tickfont: tickfont
+        title:{
+            text: 'Milhões de usuáios ativos',
+            font: {
+                color: getCSS('--cor-secundaria')
+            }
+        }
     }
 }
 const grafico = document.createElement('div');
