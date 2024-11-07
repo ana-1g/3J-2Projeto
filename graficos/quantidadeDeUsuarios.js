@@ -40,7 +40,7 @@ const layout = {
         }
     },
     yaxis:{
-        tickfont: tickfont
+        tickfont: tickfont,
         title:{
             text: 'Milhões de usuáios ativos',
             font: {
